@@ -29,7 +29,8 @@ actor_prompt_template = ChatPromptTemplate.from_messages(
 
             1. {first_instruction}
             2. Reflect and critique your answer. Be severe to maximize improvement.
-            3. Recommend search queries to research information and improve your answer.""",
+            3. Recommend search queries to research information and improve your answer. This is a must have in the response
+            """,
         ),
         MessagesPlaceholder(variable_name="messages"),
         ("system", "Answer the user's question above using the required format."),
